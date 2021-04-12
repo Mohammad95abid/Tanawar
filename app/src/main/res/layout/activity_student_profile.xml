@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:background="@color/posts_tab_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:fontFamily="Times-New-Roman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/studentName_StudentProfile"
+            android:gravity="center"
+            android:textColor="#666699"
+            />
+        <TextView
+            android:fontFamily="Times-New-Roman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/studentEmail_StudentProfile"
+            android:gravity="center"
+            android:textColor="#666699"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_view_studentProfile"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        >
+
+        <Button
+            android:fontFamily="Times-New-Roman"
+            android:id="@+id/btnAskHelp_StudentProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTintMode="screen"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="Ask Help On Map"
+            android:textColor="@color/login_text_color" />
+
+        <TextView
+            android:fontFamily="Times-New-Roman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="My Help Request"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:fontFamily="Times-New-Roman"
+            android:id="@+id/my_request_for_help"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

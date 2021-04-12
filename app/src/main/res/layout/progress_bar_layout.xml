@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#CCFFFFFF"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="40dp"
+    android:layout_gravity="center"
+    android:layoutDirection="ltr"
+    >
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/facebook_login_progressBar"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/facebook_login_text_under_progressBar"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="8dp"
+        android:text="Please Wait, Loading your profile..."
+        />
+</LinearLayout>

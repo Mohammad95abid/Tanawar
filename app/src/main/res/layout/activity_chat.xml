@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#afc7cf"
+    android:layoutDirection="ltr"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recipientName"
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="#afc7cf"
+            android:textColor="#395660"
+            android:text="Name"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatBody_chatActivity"
+        android:layout_width="match_parent"
+        android:layout_height="553dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#608f9f"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/messageEDT_ChatActivity"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="10dp" />
+        <ImageView
+            android:id="@+id/sendIC"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_message_ic"
+            android:layout_marginRight="25dp"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

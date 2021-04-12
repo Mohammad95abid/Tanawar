@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tanawar.tanawarandroidapp"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher1_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher1_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MyChatsActivity"
+            android:label="@string/title_activity_my_chats"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ShareTeacherProfileOnMap"
+            android:label="ShareTeacherProfileOnMap"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".AddAskHelpOnMap"
+            android:label="@string/title_activity_add_ask_help_on_map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".StudentProfile"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddPrivateLesson"
+            android:label="@string/title_activity_add_private_lesson"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyDiary"
+            android:label="@string/title_activity_my_diary"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyDiaryFragment"
+            android:label="@string/title_activity_my_diary"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ShowVideoInFullScreen" />
+        <activity android:name=".ShowPostImageInFullScreen" />
+        <activity android:name=".ChooseAddressOnMap" />
+        <activity
+            android:name=".Teacher_MyPosts"
+            android:label="@string/title_activity_teacher__my_posts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Teacher_AddPost"
+            android:label="@string/title_activity_teacher__my_videos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TeacherProfile" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".GoogleLogin" />
+        <activity android:name=".FacebookLogin" />
+        <activity
+            android:name=".Homepage"
+            android:label="@string/title_activity_homepage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Navigation_Menu_Style">
+        <item name="fontFamily">Times-New-Roman</item>
+    </style>
+</resources>

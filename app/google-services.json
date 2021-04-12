@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "418485598842",
+    "firebase_url": "https://tanawar-mr.firebaseio.com",
+    "project_id": "tanawar-mr",
+    "storage_bucket": "tanawar-mr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418485598842:android:a1c336f664a4c01162d9c3",
+        "android_client_info": {
+          "package_name": "com.tanawar.tanawarandroidapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418485598842-6prd2ueefee7ni5c9j471hrnels3tsg7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tanawar.tanawarandroidapp",
+            "certificate_hash": "e25333757623605472263e5be66d35d952806c40"
+          }
+        },
+        {
+          "client_id": "418485598842-c5rjn0dpni2cd2hjad3ba91qdvdeultn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSjcRcSU9XDWcKYIslPJWrI3c29zA38O4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418485598842-c5rjn0dpni2cd2hjad3ba91qdvdeultn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:opacity="transparent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="100dp" android:gravity="right" android:start="300dp">
+        <bitmap android:src="@drawable/ic_arrow_drop_down_black_24dp" android:gravity="center"/>
+    </item>
+</layer-list>

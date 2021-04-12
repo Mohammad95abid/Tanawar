@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:src="@drawable/profile_pic"
+                android:id="@+id/facebook_prof_pic"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/profile_name"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/profile_name"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/example_email"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/profile_email"
+                />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_facebook_button"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/login_facebook_continue_buttonID"
+                android:text="@string/login_continue_to_your_profile"
+                android:layout_marginBottom="50dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+

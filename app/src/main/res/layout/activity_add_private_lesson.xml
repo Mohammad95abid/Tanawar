@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPrivateLesson"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:background="@color/posts_tab_background"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lesson Subject:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            />
+
+        <EditText
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtSubject"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lesson Type:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            />
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnLessonType"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="Choose Student:"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/students_list_add_private_lesson"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/accountTypeIMG"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/accountTypeIMG"
+                android:hint="Select Account"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Name:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            />
+
+        <EditText
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtStudentName"
+            />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Email:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginRight="30dp"
+        />
+
+    <EditText
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtStudentEmail"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lesson Time:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/dpLessonDate"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Click To Choose Lesson Date "
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/gray"
+                />
+            <TextView
+                android:id="@+id/dpLessonTime"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Click To Choose Lesson Time"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/gray"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zoom Link: "
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            android:id="@+id/tvZoomLinkLabel_AddPLesson"
+            />
+
+        <EditText
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtZoomLink"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/addPrivateLesson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTintMode="screen"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="add Private Lesson"
+            android:textColor="@color/login_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

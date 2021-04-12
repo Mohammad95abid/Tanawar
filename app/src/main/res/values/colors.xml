@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    //#6E2C90
+    <color name="colorPrimaryDark">#292b3d</color>
+    //#551B72
+    <color name="colorAccent">#FF4081</color>
+    //#D81B60
+    <color name="grayLight">#fafafa</color>
+    <color name="gray">#D0D0D0</color>
+    <color name="startBlue">#09c6df</color>
+    <color name="endBlue">#0bcce6</color>
+    <color name="login_text_color">#6A1B9A</color>
+    <color name="login_background">#F7F7F7</color>
+    <color name="button_color">#6A1B9A</color>
+    <color name="button_color_pressed">#AB47BC</color>
+    <color name="registerEditTextBG">#DADADA</color>
+    <color name="registerTextColor">#6e6e6e</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="profile_vertical_line">#000000</color>
+    <color name="mainBackground_posts_layouts">#D7D7D7</color>
+    <color name="blue">#0000ff</color>
+    <color name="posts_tab_background">#eee6ff</color>
+    <color name="post_layout_background">#FFFFFF</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
